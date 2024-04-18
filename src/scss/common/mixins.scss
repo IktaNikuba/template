@@ -1,0 +1,6 @@
+@mixin adaptive($property, $value-min, $factor, $value-max) {
+  #{$property}: clamp(
+          $value-min,
+          $factor,
+          $value-max);
+}

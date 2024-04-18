@@ -1,0 +1,141 @@
+$primary: #0275d8;
+$success: #5cb85c;
+$info: #5bc0de;
+$warning: #f0ad4e;
+$danger: #d9534f;
+$light: #f7f7f7;
+$dark: #292b2c;
+
+$gray100: #fefefe;
+$gray200: #fbfbfb;
+$gray300: #fafafa;
+$gray400: #f3f3f3;
+$gray500: #eeeeee;
+$gray600: #a3a3a3;
+$gray700: #8c8c8c;
+$gray800: #555555;
+$gray900: #333333;
+$white: #fff;
+$black: #000;
+
+$text--light: $white;
+$text--dark: $dark;
+$text--grey: $gray600;
+$text--primary: $primary;
+$text--info: $info;
+$text--danger: $danger;
+
+$background--light: $light;
+$background--info: $info;
+$background--primary: $primary;
+$background--warning: $warning;
+$background--success: $success;
+$background--danger: $danger;
+$background--dark: $dark;
+
+$border--grey: 1px solid $gray900;
+$border--light: 1px solid $light;
+
+$icon-color--primary: $primary;
+$icon-color--info: $info;
+$icon-color--danger: $danger;
+$icon-color--dark: $dark;
+$icon-color--dark-grey: $gray900;
+$icon-color--grey: $gray600;
+$icon-color--light-grey: $gray300;
+$icon-color--light: $light;
+
+$list-marker-color: $danger;
+$list-marker-color-mobile: $info;
+
+$fs-base: 32px;
+
+$fs-xxs: 0.25 * $fs-base;
+$fs-xs: 0.5 * $fs-base;
+$fs-s: 0.75 * $fs-base;
+$fs-m: $fs-base;
+$fs-l: 1.25 * $fs-base;
+$fs-xl: 1.5 * $fs-base;
+$fs-xxl: 1.75 * $fs-base;
+$fs-big-xs: 2 * $fs-base;
+$fs-big-s: 2.25 * $fs-base;
+$fs-big-m: 2.5 * $fs-base;
+$fs-big-l: 2.75 * $fs-base;
+$fs-big-xl: 3 * $fs-base;
+
+$fs-custom-25: 25px;
+$big-fs-custom-120: 120px;
+
+$lh-xxl: 150%;
+$lh-xl: 140%;
+$lh-lg: 130%;
+$lh-md: 120%;
+$lh-sm: 110%;
+$lh-xs: 100%;
+
+$fw-extra-light: 100;
+$fw-lighter: 200;
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-demi-bold: 600;
+$fw-bold: 700;
+$fw-bolder: 800;
+$fw-heavy: 900;
+
+$spacer-base: 32px;
+
+$sp-xxs: 0.25 * $spacer-base;
+$sp-xs: 0.5 * $spacer-base;
+$sp-s: 0.75 * $spacer-base;
+$sp-m: $spacer-base;
+$sp-l: 1.5 * $spacer-base;
+$sp-xl: 2 * $spacer-base;
+$sp-xxl: 2.25 * $spacer-base;
+$sp-custom-25: 25px;
+
+$mouse-device: "(hover: hover) and (pointer:fine)";
+$touch-device: "(hover: none) and (pointer:coarse)";
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px) !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1450px) !default;
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 1.5rem !default;
+
+$xs: '(max-width: 375px)' !default;
+$sm: '(max-width: #{map-get($grid-breakpoints , sm) - 1px})' !default;
+$md: '(max-width: #{map-get($grid-breakpoints, md) - 1px})' !default;
+$lg: '(max-width: #{map-get($grid-breakpoints, lg) - 1px})' !default;
+$xl: '(max-width: #{map-get($grid-breakpoints, xl) - 1px})' !default;
+$xxl: '(max-width: #{map-get($grid-breakpoints, xxl) - 1px})' !default;
+
+$min-xs: '(min-width: 375px)';
+$min-sm: '(min-width: #{map-get($grid-breakpoints, sm)})' !default;
+$min-md: '(min-width: #{map-get($grid-breakpoints, md)})' !default;
+$min-lg: '(min-width: #{map-get($grid-breakpoints, lg)})' !default;
+$min-xl: '(min-width: #{map-get($grid-breakpoints, xl)})' !default;
+$min-xxl: '(min-width: #{map-get($grid-breakpoints, xxl)})' !default;
+
+
+
+
+
+
+
+
+
+
+

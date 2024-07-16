@@ -1,12 +1,35 @@
-import {defineConfig} from "vite";
+import { defineConfig } from 'vite'
+import path from 'path'
+import eslint from 'vite-plugin-eslint'
+import stylelint from 'vite-plugin-stylelint'
+
 export default defineConfig({
   build: {
-    // generate .vite/manifest.json in outDir
     manifest: true,
     rollupOptions: {
-      // overwrite default .html entry
-      input: './main.js',
+      input: './main.js'
     },
-    assetsDir: "public",
+    assetsDir: 'public'
   },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  },
+  plugins: [
+    eslint(),
+    stylelint({
+      files: ['**/*.scss']
+    })
+  ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @import "node_modules/bootstrap/scss/bootstrap-reboot";
+          @import "node_modules/bootstrap/scss/bootstrap-grid";
+        `
+      }
+    }
+  }
 })

@@ -1,0 +1,43 @@
+$layout-width: 1440px;
+$layout-height: 1024px;
+
+$pixel-width: calc(100 / $layout-width * 1);
+$pixel-height: calc(100 / $layout-height * 1);
+
+$spacer-base: 32px;
+
+$sp-xxs: 0.25 * $spacer-base;
+$sp-xxs-factorial-x: #{calc($sp-xxs * $pixel-width)}vw;
+$sp-xxs-factorial-y: #{calc($sp-xxs * $pixel-height)}vh;
+
+$sp-xs: 0.25 * $spacer-base;
+$sp-xs-factorial-x: #{calc($sp-xs * $pixel-width)}vw;
+$sp-xs-factorial-y: #{calc($sp-xs * $pixel-height)}vh;
+
+$sp-s: 0.5 * $spacer-base;
+$sp-s-factorial-x: #{calc($sp-s * $pixel-width)}vw;
+$sp-s-factorial-y: #{calc($sp-s * $pixel-height)}vh;
+
+$sp-m: $spacer-base;
+$sp-m-factorial-x: #{calc($sp-m * $pixel-width)}vw;
+$sp-m-factorial-y: #{calc($sp-m * $pixel-height)}vh;
+
+$sp-l: 1.5 * $spacer-base;
+$sp-l-factorial-x: #{calc($sp-l * $pixel-width)}vw;
+$sp-l-factorial-y: #{calc($sp-l * $pixel-height)}vh;
+
+$sp-xl: 2 * $spacer-base;
+$sp-xl-factorial-x: #{calc($sp-xl * $pixel-width)}vw;
+$sp-xl-factorial-y: #{calc($sp-xl * $pixel-height)}vh;
+
+$sp-xxl: 2.25 * $spacer-base;
+$sp-xxl-factorial-x: #{calc($sp-xxl * $pixel-width)}vw;
+$sp-xxl-factorial-y: #{calc($sp-xxl * $pixel-height)}vh;
+
+$sp-custom-10: 10px;
+$sp-custom-10-factorial-x: #{calc($sp-custom-10 * $pixel-width)}vw;
+$sp-custom-10-factorial-y: #{calc($sp-custom-10 * $pixel-height)}vh;
+
+$sp-custom-15: 15px;
+$sp-custom-15-factorial-x: #{calc($sp-custom-15 * $pixel-width)}vw;
+$sp-custom-15-factorial-y: #{calc($sp-custom-15 * $pixel-height)}vh;

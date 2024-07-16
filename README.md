@@ -1,1 +1,1 @@
-# template
+# skeleton-frontend-grid

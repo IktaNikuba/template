@@ -1,0 +1,20 @@
+@import "node_modules/bootstrap/scss/bootstrap-reboot";
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+
+@import "@/styles/common/grid";
+@import "@/styles/common/mixins";
+@import "@/styles/common/colors-theme";
+@import "@/styles/common/screen-grid/font-size";
+@import "@/styles/common/screen-full/font-size-full";
+@import "@/styles/common/screen-grid/spacer";
+@import "@/styles/common/screen-full/spacer-full";
+@import "@/styles/common/line-height";
+@import "@/styles/common/font-weight";
+@import "@/styles/common/screen-grid/typography";
+@import "@/styles/common/screen-full/typography-full";
+@import "@/styles/common/border";
+@import "@/styles/common/devices";
+@import "@/styles/common/icons";
+@import "@/styles/common/shadow";
+@import "@/styles/common/z-index";
+@import "@/styles/common/common";

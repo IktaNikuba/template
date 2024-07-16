@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 320px;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+img,
+picture {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	line-height: 1;
+	text-decoration: none;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	width: max(24px, 1.5vw);
+	aspect-ratio: 1 / 1;
+}

@@ -1,0 +1,83 @@
+$font-family-sans-serif: helvetica, sans-serif;
+
+$body-font-size: max($fs-xs, $fs-xs-factorial);
+$h1-font-size: max($fs-big-xxs, $fs-big-max-factorial);
+$h2-font-size: max($fs-big-m, $fs-big-m-factorial);
+$h3-font-size: max($fs-big-m, $fs-big-m-factorial);
+$h4-font-size: max($fs-big-xxs, $fs-big-xxs-factorial);
+$h5-font-size: max($fs-big-min, $fs-big-min-factorial);
+
+$body-line-height: $lh-xl;
+$h1-line-height: $lh-sm;
+$h2-line-height: $lh-xl;
+$h3-line-height: $lh-xl;
+$h4-line-height: $lh-xl;
+$h5-line-height: $lh-md;
+
+$body-font-weight: $fw-normal;
+$h1-font-weight: $fw-bold;
+$h2-font-weight: $fw-bold;
+$h3-font-weight-min: $fw-bold;
+$h3-font-weight-max: $fw-custom-550;
+$h4-font-weight: $fw-custom-550;
+$h5-font-weight: $fw-custom-550;
+
+$h1-margin-bottom: max($sp-xxs, $sp-xxs-factorial-y);
+$h2-margin-bottom: max($sp-xs, $sp-xs-factorial-y);
+$h3-margin-bottom: max($sp-xs, $sp-xs-factorial-y);
+$h4-margin-bottom: max($sp-xxs, $sp-xxs-factorial-y);
+$h5-margin-bottom: max($sp-xxs, $sp-xxs-factorial-y);
+
+@font-face {
+	font-family: $font-family-sans-serif;
+	font-style: normal;
+	font-display: auto;
+	src: local('localName'),
+	url('@/fonts/helveticaneuecyr_roman.otf') format('otf')
+}
+
+body {
+	font-weight: $fw-normal;
+	font-size: $body-font-size;
+	font-family: $font-family-sans-serif;
+	line-height: $body-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: helvetica, sans-serif;
+}
+
+h1 {
+	margin-bottom: $h1-margin-bottom;
+	font-weight: $h1-font-weight;
+	font-size: $h1-font-size;
+	line-height: $h1-line-height;
+}
+
+h2 {
+	margin-bottom: $h2-margin-bottom;
+	font-weight: $h2-font-weight;
+	font-size:$h2-font-size;
+	line-height: $h2-line-height;
+}
+
+h3 {
+	margin-bottom: $h3-margin-bottom;
+	font-weight: $h3-font-weight-min;
+	font-size: $h3-font-size;
+	line-height: $h3-line-height;
+}
+
+h4 {
+	margin-bottom: $h4-margin-bottom;
+	font-weight: $h4-font-weight;
+	font-size: $h4-font-size;
+	line-height: $h4-line-height;
+}
+
+h5 {
+	margin-bottom: $h5-margin-bottom;
+	font-weight: $h5-font-weight;
+	font-size: $h5-font-size;
+	line-height: $h5-line-height;
+}

@@ -1,0 +1,4 @@
+app/assets/javascripts/flatty
+app/assets/javascripts/admin
+*.d.ts
+dist

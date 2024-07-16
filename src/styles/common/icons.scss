@@ -1,0 +1,27 @@
+$icons-font-family: icomoon;
+
+@font-face {
+	font-weight: normal;
+	font-family: $icons-font-family;
+	font-style: normal;
+	src: url('@/icons/icomoon.ttf') format('truetype'),
+	url('@/icons/icomoon.woff') format('woff'),
+	url('@/icons/icomoon.svg') format('svg');
+	font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	text-decoration: none;
+}
+
+[class^="icon-"]::before,
+[class^="icon-"]::after,
+[class*=" icon-"]::before,
+[class*=" icon-"]::after {
+	font-weight: normal;
+	font-family: $icons-font-family, serif !important;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+}

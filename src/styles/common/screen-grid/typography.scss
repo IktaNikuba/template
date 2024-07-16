@@ -1,5 +1,8 @@
+$font-family-sans-serif: helvetica, sans-serif;
+
 $body-font-size-max: $fs-m;
 $body-font-size-min: calc($body-font-size-max - 20%);
+
 $h1-font-size-max: $fs-big-l;
 $h1-font-size-min: calc($h1-font-size-max - 30%);
 $h2-font-size-max: $fs-big-m;
@@ -13,6 +16,7 @@ $h5-font-size-min: calc($h1-font-size-max - 30%);
 
 $body-line-height-min: $lh-sm;
 $body-line-height-max: $lh-md;
+
 $h1-line-height-min: $lh-xl;
 $h1-line-height-max: $lh-xxl;
 $h2-line-height-min: $lh-xl;
@@ -36,44 +40,38 @@ $h5-margin-bottom-min: $sp-xxs;
 $h5-margin-bottom-max: $sp-s;
 
 @font-face {
-	font-family: fontName sans-serif;
+	font-family: $font-family-sans-serif;
 	font-style: normal;
 	font-display: auto;
 	src: local('localName'),
-	url('/path') format('truetype'),
-	url('/path') format('woff2'),
-	url('/path') format('woff'),
-	url('/path') format('embedded-opentype');
+	url('@/fonts/helveticaneuecyr_roman.otf') format('otf')
 }
 
 body {
-	font-family: fontName sans-serif;
 	font-weight: $fw-normal;
+	font-family: $font-family-sans-serif;
+	line-height: $body-line-height-max;
+
 	@include adaptive(
 			font-size,
 			$body-font-size-min,
 			4vw,
 			$body-font-size-max);
 	
-	@include adaptive(
-			line-height,
-			$body-line-height-min,
-			8vh,
-			$body-line-height-max);
-	
 	@media #{$md} {
-		line-height: $h1-line-height-min;
+		line-height: $body-line-height-min;
 	}
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: fontName sans-serif;
 	font-weight: $fw-bold;
+	font-family: $font-family-sans-serif;
 	
 }
 
 h1 {
 	margin-bottom: $fs-xl;
+	line-height: $h1-line-height-max;
 	
 	@include adaptive(
 			font-size,
@@ -82,25 +80,20 @@ h1 {
 			$h1-font-size-max);
 	
 	@include adaptive(
-			line-height,
-			$h1-line-height-min,
-			8vh,
-			$h1-line-height-max);
-	
-	@include adaptive(
 			margin-bottom,
 			$h1-margin-bottom-min,
 			8vh,
 			$h1-margin-bottom-max);
 	
 	@media #{$md} {
-		line-height: $h1-line-height-min;
 		margin-bottom: $h1-margin-bottom-min;
+		line-height: $h1-line-height-min;
 	}
 }
 
 h2 {
 	margin-bottom: $fs-l;
+	line-height: $h2-line-height-max;
 	
 	@include adaptive(
 			font-size,
@@ -109,36 +102,25 @@ h2 {
 			$h2-font-size-max);
 	
 	@include adaptive(
-			line-height,
-			$h2-line-height-min,
-			8vh,
-			$h2-line-height-max);
-	
-	@include adaptive(
 			margin-bottom,
 			$h2-margin-bottom-min,
 			8vh,
 			$h2-margin-bottom-max);
 	
 	@media #{$md} {
-		line-height: $h2-line-height-min;
 		margin-bottom: $h2-margin-bottom-min;
+		line-height: $h2-line-height-min;
 	}
 }
 
 h3 {
 	margin-bottom: $fs-m;
+	line-height: $h3-line-height-max;
 	
 	@include adaptive(
 			font-size,
 			$h3-font-size-min,
 			4vw,
-			$h3-font-size-max);
-	
-	@include adaptive(
-			line-height,
-			$h3-line-height-min,
-			8vh,
 			$h3-font-size-max);
 	
 	@include adaptive(
@@ -148,24 +130,19 @@ h3 {
 			$h3-margin-bottom-max);
 	
 	@media #{$md} {
-		line-height: $h3-line-height-min;
 		margin-bottom: $h3-margin-bottom-min;
+		line-height: $h3-line-height-min;
 	}
 }
 
 h4 {
 	margin-bottom: $fs-s;
+	line-height: $h4-line-height-max;
 	
 	@include adaptive(
 			font-size,
 			$h4-font-size-min,
 			4vw,
-			$h4-font-size-max);
-	
-	@include adaptive(
-			line-height,
-			$h4-line-height-min,
-			8vh,
 			$h4-font-size-max);
 	
 	@include adaptive(
@@ -175,25 +152,20 @@ h4 {
 			$h4-margin-bottom-max);
 	
 	@media #{$md} {
-		line-height: $h4-line-height-min;
 		margin-bottom: $h4-margin-bottom-min;
+		line-height: $h4-line-height-min;
 	}
 }
 
 h5 {
 	margin-bottom: $fs-xs;
+	line-height: $h5-line-height-max;
 	
 	@include adaptive(
 			font-size,
 			$h5-font-size-min,
 			4vw,
 			$h5-font-size-max);
-	
-	@include adaptive(
-			line-height,
-			$h5-line-height-min,
-			8vh,
-			$h5-line-height-max);
 	
 	@include adaptive(
 			margin-bottom,

@@ -1,0 +1,52 @@
+$layout-width: 1440px;
+$layout-height: 1024px;
+
+$pixel-width: calc(100 / $layout-width * 1);
+$pixel-height: calc(100 / $layout-height * 1);
+
+$fs-base: 32px;
+
+$fs-xs: 14px;
+$fs-xs-factorial: #{calc($fs-xs * $pixel-width)}vw;
+
+$fs-s: 16px;
+$fs-s-factorial: #{calc($fs-s * $pixel-width)}vw;
+
+$fs-m: 17px;
+$fs-m-factorial: #{calc($fs-m * $pixel-width)}vw;
+
+$fs-l: 19px;
+$fs-l-factorial: #{calc($fs-l * $pixel-width)}vw;
+
+$fs-xl: 22px;
+$fs-xl-factorial: #{calc($fs-xl * $pixel-width)}vw;
+
+$fs-xxl: 23px;
+$fs-xxl-factorial: #{calc($fs-xxl * $pixel-width)}vw;
+
+$fs-big-min: 24px;
+$fs-big-min-factorial: #{calc($fs-big-min * $pixel-width)}vw;
+
+$fs-big-xxs: 36px;
+$fs-big-xxs-factorial: #{calc($fs-big-xxs * $pixel-width)}vw;
+
+$fs-big-xs: 40px;
+$fs-big-xs-factorial: #{calc($fs-big-xs * $pixel-width)}vw;
+
+$fs-big-s: 46px;
+$fs-big-s-factorial: #{calc($fs-big-s * $pixel-width)}vw;
+
+$fs-big-m: 48px;
+$fs-big-m-factorial: #{calc($fs-big-m * $pixel-width)}vw;
+
+$fs-big-l: 56px;
+$fs-big-l-factorial: #{calc($fs-big-l * $pixel-width)}vw;
+
+$fs-big-xl: 60px;
+$fs-big-xl-factorial: #{calc($fs-big-xl * $pixel-width)}vw;
+
+$fs-big-xxl: 78px;
+$fs-big-xxl-factorial: #{calc($fs-big-xxl * $pixel-width)}vw;
+
+$fs-big-max: 94px;
+$fs-big-max-factorial: #{calc($fs-big-max * $pixel-width)}vw;

@@ -1,0 +1,85 @@
+:root {
+	--purple: purple;
+	--violet: violet;
+	--blue: blue;
+	--green: green;
+	--turquoise: turquoise;
+	--red: red;
+	--gray100: #fefefe;
+	--gray200: #fbfbfb;
+	--gray300: #fafafa;
+	--gray400: #f3f3f3;
+	--gray500: #eee;
+	--gray600: #a3a3a3;
+	--gray700: #8c8c8c;
+	--gray800: #555;
+	--gray900: #333;
+	--white: #fff;
+	--black: #000;
+}
+
+.dark-mode {
+	--purple: #320361;
+	--violet: #120137;
+	--blue: #012230;
+	--green: #012c25;
+	--turquoise: #5d8371;
+	--red: #500d0d;
+	--gray100: #e8e8e8;
+	--gray200: #cfcfcf;
+	--gray300: #bab9b9;
+	--gray400: #bfbdbd;
+	--gray500: #8e8e8e;
+	--gray600: #878686;
+	--gray700: #777676;
+	--gray800: #454545;
+	--gray900: #272727;
+	--white: #000;
+	--black: #fff;
+}
+
+$my-purple: var(--purple);
+$my-violet: var(--violet);
+$my-blue: var(--blue);
+$my-green: var(--green);
+$my-turquoise: var(--turquoise);
+$my-red: var(--red);
+
+$my-gray300: var(--gray300);
+$my-gray400: var(--gray400);
+$my-gray500: var(--gray500);
+$my-gray600: var(--gray600);
+$my-gray800: var(--gray800);
+$my-gray-dark: var(--gray-dark);
+$my-white: var(--white);
+$my-black: var(--black);
+
+$my-primary: var(--gray400);
+$my-primary-dark-grey: var(--gray500);
+$my-primary-light: var(--gray300);
+$my-primary-dark: var(--gray800);
+$my-danger: var(--red-brown);
+$my-info: var(--gray800);
+
+$text--primary: $my-primary-dark-grey;
+$text--light: $my-primary-light;
+$text--gray: $my-gray800;
+$text--dark: $my-black;
+$text--white: $my-white;
+
+$background--primary: $my-primary;
+$background--light: $my-primary-light;
+$background--info: $my-info;
+$background--danger: $my-danger;
+$background--dark: $my-black;
+$background--white: $my-white;
+
+$icon-color--dark: $my-black;
+$icon-color--white: $my-white;
+$icon-circle-color: $background--primary;
+
+$logo-color--dark: $my-black;
+$logo-color--white: $my-white;
+
+$decoration-line-color: $my-black;
+$gradient-primary: linear-gradient(45deg, $my-primary, $my-info);

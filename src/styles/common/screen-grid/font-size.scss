@@ -1,0 +1,17 @@
+$fs-base: 24px;
+
+$fs-xxs: calc(0.25 * $fs-base);
+$fs-xs: calc(0.5 * $fs-base);
+$fs-s: calc(0.75 * $fs-base);
+$fs-m: $fs-base;
+$fs-l: calc(1.25 * $fs-base);
+$fs-xl: calc(1.5 * $fs-base);
+$fs-xxl: calc(1.75 * $fs-base);
+$fs-big-xs: calc(2 * $fs-base);
+$fs-big-s: calc(2.25 * $fs-base);
+$fs-big-m: calc(2.5 * $fs-base);
+$fs-big-l: calc(2.75 * $fs-base);
+$fs-big-xl: calc(3 * $fs-base);
+
+$fs-custom-25: 25px;
+$big-fs-custom-120: 120px;
